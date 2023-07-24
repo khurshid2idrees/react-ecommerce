@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchCount } from './counterAPI';
+import { fetchCount } from './ProductListApi';
 
 const initialState = {
   value: 0,
@@ -39,7 +39,7 @@ export const counterSlice = createSlice({
         state.status = 'idle';
         state.value += action.payload;
       });
-  }},
+   } },
 });
 
 export const { increment} = counterSlice.actions;
