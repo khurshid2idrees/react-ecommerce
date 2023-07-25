@@ -12,6 +12,8 @@ import {
   Link,
 } from "react-router-dom";
 import Singup from './features/auth/components/Signup';
+import Cart from './features/cart/Cart';
+import CartPage from './pages/CartPage';
 
 
 
@@ -29,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: (<Singup></Singup>),
+  },
+  {   //  only for testing - then page will be added
+    path: "/cart",
+    element: (<CartPage></CartPage>),
   },
 ]);
 
